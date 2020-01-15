@@ -26,6 +26,6 @@ As a workaround, this Python script does the following:
 
 --Check if that Alarm exsists in the List of Alarms
 
-  --If yes: Delete the Alarm
+     --If yes: Delete the Alarm
   
-  --Else: Provide an error message
+     --Else: Provide an error message
