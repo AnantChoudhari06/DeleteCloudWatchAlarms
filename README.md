@@ -21,7 +21,11 @@ cloudwatch.delete_alarms(
 As a workaround, this Python script does the following:
 
 --Make a describe alarms API call and get the List of existing alarms
+
 --Get the alarm name from the user that has to be deleted
+
 --Check if that Alarm exsists in the List of Alarms
+
   --If yes: Delete the Alarm
+  
   --Else: Provide an error message
