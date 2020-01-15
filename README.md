@@ -2,7 +2,7 @@
 This script checks if the CloudWatch alarm exists or not and provides the response
 
 
-While deleting the CloudWatch alarm via the Boto3 or the AWS CLI, there is no output which shows if the Alarm was successfully deleted or was there any error.
+While deleting the CloudWatch alarm via the Boto3 or AWS CLI, there is no output which shows if the Alarm was successfully deleted or was there any error.
 
 
 
