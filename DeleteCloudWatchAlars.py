@@ -6,7 +6,21 @@ import re
 
 print("\n")
 # Create CloudWatch client
-cloudwatch = boto3.client('cloudwatch')
+client = boto3.client('ec2')
+regions = [region['RegionName'] for region in client.describe_regions()['Regions']]
+print("Here is the list of regions")
+print(regions)
+print("\n")
+print("Enter the region")
+region=input()
+
+if region in regions:
+	cloudwatch = boto3.client('cloudwatch',region_name=region)
+elif region not in regions:
+	print("not a valid region")
+	sys.exit()
+
+
 
 #List Alarms
 response = cloudwatch.describe_alarms()
